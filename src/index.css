@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+:root {
+  --primary: #4A90E2;
+  --secondary: #F7B733;
+  --success: #2ECC71;
+  --background: #F8F9FA;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: var(--background);
+}
+
+.dyslexic-friendly {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.game-card {
+  @apply bg-white rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:transform hover:scale-105;
+}
+
+.progress-bar {
+  @apply h-6 rounded-full bg-gray-200 overflow-hidden;
+}
+
+.progress-bar-fill {
+  @apply h-full transition-all duration-500 ease-out;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white font-bold py-3 px-6 rounded-full 
+         shadow-lg transform transition-all duration-300 
+         hover:scale-105 hover:shadow-xl 
+         active:scale-95 active:shadow-md;
+}
